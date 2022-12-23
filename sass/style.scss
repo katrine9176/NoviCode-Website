@@ -102,6 +102,17 @@ body {
 			background-color: $dark-blue;
 		}
 	}
+
+	&__paragraph {
+		text-align: center;
+		color: $grey;
+		font-family: 'Indie Flower', cursive;
+		font-size: 1.4rem;
+		position: absolute;
+		top: 60%;
+		left: 50%;
+		transform: translate(-50%);
+	}
 }
 
 .footer {
@@ -127,12 +138,16 @@ body {
 
 	.header {
 		&__heading {
-			font-size: 3rem;
+			font-size: 3.5rem;
 
 			&::after {
-				top: 35px;
+				top: 40px;
                 right: -10px;
 			}
+		}
+
+		&__paragraph {
+			font-size: 1.8rem;
 		}
 	}
 }
@@ -154,6 +169,19 @@ body {
             background-image: url('../img/test-big.jpg');
             height: 500px;
         }
+
+		&__heading {
+			font-size: 4rem;
+
+			&::after {
+				width: 70px;
+				top: 45px;
+			}
+		}
+
+		&__paragraph {
+			font-size: 2rem;
+		}
 
 		.nav {
 			&-mobile {
@@ -186,6 +214,19 @@ body {
 		.nav-desktop {
 			width: 900px;
 			justify-content: space-evenly;
+		}
+
+		&__heading {
+			font-size: 6rem;
+
+			&::after {
+				width: 100px;
+				top: 70px;
+			}
+		}
+
+		&__paragraph {
+			font-size: 2.5rem;
 		}
 	}
 }

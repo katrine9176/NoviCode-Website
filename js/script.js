@@ -17,7 +17,7 @@ const toggleNav = () => {
 
 const currentYear = () => {
 	const year = new Date().getFullYear()
-	footerYear.innerText = year
+	footerYear.textContent = year
 }
 
 

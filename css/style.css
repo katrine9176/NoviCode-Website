@@ -110,6 +110,16 @@ body {
   height: 5px;
   background-color: hsl(240deg, 40%, 10%);
 }
+.header__paragraph {
+  text-align: center;
+  color: hsla(0deg, 0%, 100%, 0.785);
+  font-family: "Indie Flower", cursive;
+  font-size: 1.4rem;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%);
+}
 
 .footer {
   position: absolute;
@@ -131,11 +141,14 @@ body {
     margin-right: 3em;
   }
   .header__heading {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   .header__heading::after {
-    top: 35px;
+    top: 40px;
     right: -10px;
+  }
+  .header__paragraph {
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 768px) {
@@ -151,6 +164,16 @@ body {
   .header__img {
     background-image: url("../img/test-big.jpg");
     height: 500px;
+  }
+  .header__heading {
+    font-size: 4rem;
+  }
+  .header__heading::after {
+    width: 70px;
+    top: 45px;
+  }
+  .header__paragraph {
+    font-size: 2rem;
   }
   .header .nav-mobile {
     display: none;
@@ -175,6 +198,16 @@ body {
   .header .nav-desktop {
     width: 900px;
     justify-content: space-evenly;
+  }
+  .header__heading {
+    font-size: 6rem;
+  }
+  .header__heading::after {
+    width: 100px;
+    top: 70px;
+  }
+  .header__paragraph {
+    font-size: 2.5rem;
   }
 }
 @media (min-width: 1400px) {
