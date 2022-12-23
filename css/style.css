@@ -29,6 +29,11 @@ body {
   font-size: 1.8rem;
 }
 
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
 .header {
   overflow: hidden;
   position: relative;
@@ -95,4 +100,30 @@ body {
 }
 .footer__paragraph {
   color: hsl(0deg, 0%, 100%);
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .header__logo, .header .hamburger {
+    display: none;
+  }
+  .header .nav-mobile {
+    display: none;
+  }
+  .header .nav-desktop {
+    display: flex;
+    margin: -5.4em auto;
+  }
+  .header .nav__logo {
+    width: 80px;
+    height: 80px;
+    margin: 1em;
+  }
+  .header .nav__link {
+    line-height: 80px;
+  }
 }/*# sourceMappingURL=style.css.map */
