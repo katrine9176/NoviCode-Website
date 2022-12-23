@@ -113,7 +113,7 @@ body {
 }
 .header__paragraph {
   text-align: center;
-  color: hsla(0deg, 0%, 100%, 0.785);
+  color: rgba(255, 255, 255, 0.7843137255);
   font-family: "Indie Flower", cursive;
   font-size: 1.4rem;
   position: absolute;
@@ -123,6 +123,7 @@ body {
 }
 
 .main .section {
+  position: relative;
   margin: 8em 0;
   text-align: center;
 }

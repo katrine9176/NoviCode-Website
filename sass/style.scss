@@ -119,6 +119,7 @@ body {
 
 .main {
 	.section {
+		position: relative;
 		margin: 8em 0;
 		text-align: center;
 		
@@ -136,6 +137,8 @@ body {
 	}
 
 	.discord {
+		// z-index: 10;
+
 		&__link {
 			color: $blue;
 			font-size: 1.5rem;
