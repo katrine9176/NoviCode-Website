@@ -71,7 +71,7 @@ body {
   position: fixed;
   transform: translateX(0);
 }
-.header .nav-mobile__link {
+.header .nav__link {
   margin: 1em;
   font-size: 1.8rem;
   font-weight: light;

@@ -1,6 +1,6 @@
 const nav = document.querySelector('.nav-mobile')
 const hamburger = document.querySelector('.hamburger')
-const navLinks = document.querySelectorAll('.nav-mobile__link')
+const navLinks = document.querySelectorAll('.nav__link')
 const footerYear = document.querySelector('.footer__year')
 
 
