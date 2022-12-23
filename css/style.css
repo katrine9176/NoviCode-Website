@@ -29,11 +29,6 @@ body {
   font-size: 1.8rem;
 }
 
-.wrapper {
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
 .header {
   overflow: hidden;
   position: relative;
@@ -102,6 +97,12 @@ body {
   color: hsl(0deg, 0%, 100%);
 }
 
+@media (min-width: 576px) {
+  .header__logo, .hamburger {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+}
 @media (min-width: 768px) {
   .wrapper {
     max-width: 600px;
@@ -125,5 +126,19 @@ body {
   }
   .header .nav__link {
     line-height: 80px;
+  }
+}
+@media (min-width: 992px) {
+  .wrapper {
+    max-width: 900px;
+  }
+  .header .nav-desktop {
+    width: 900px;
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 1400px) {
+  .wrappper {
+    max-width: 1200px;
   }
 }/*# sourceMappingURL=style.css.map */
