@@ -74,7 +74,7 @@ body {
 		}
 	}
 	&__img {
-		background-image: url('../img/test-small.jpg');
+		background-image: url('../img/kod-1.jpg');
 		filter: contrast(30%);
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -86,7 +86,8 @@ body {
 		font-family: 'Indie Flower', cursive;
 		color: $white;
 		font-weight: bold;
-		font-size: 2rem;
+		font-size: 2.5rem;
+		min-width: 200px;
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -95,7 +96,7 @@ body {
 		&::after {
 			content: '';
 			position: absolute;
-			top: 25px;
+			top: 30px;
 			right: -5px;
 			width: 20px;
 			height: 5px;
@@ -115,9 +116,27 @@ body {
 	}
 }
 
+
+.main {
+	.section {
+		margin: 8em 0;
+		text-align: center;
+		
+		&__heading {
+			margin-bottom: 0.7em;
+			font-size: 2.5rem;
+			font-family: 'Indie Flower', cursive;
+			color: $blue;
+		}
+
+		&__paragraph {
+			font-size: 1.4rem;
+		}
+	}
+}
+
 .footer {
 	position: absolute;
-	bottom: 0;
 	width: 100%;
 	padding: 0.5em;
 	text-align: center;
@@ -128,7 +147,6 @@ body {
 		color: $white;
 	}
 }
-
 @media (min-width: 576px) {
 	.header__logo,
 	.hamburger {
@@ -166,7 +184,6 @@ body {
 		}
 
         &__img {
-            background-image: url('../img/test-big.jpg');
             height: 500px;
         }
 
