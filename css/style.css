@@ -364,6 +364,9 @@ body {
   }
 }
 @media (min-width: 1200px) {
+  .wrapper {
+    max-width: 1100px;
+  }
   .header .nav-desktop {
     padding: 0 15em;
   }
