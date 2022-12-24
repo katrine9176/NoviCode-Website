@@ -80,6 +80,10 @@ body {
   letter-spacing: 2px;
   text-decoration: none;
   color: hsl(265deg, 99%, 38%);
+  transition: color 0.3s;
+}
+.header .nav__link:hover {
+  color: #ca00fd;
 }
 .header .nav-desktop {
   display: none;
@@ -127,7 +131,7 @@ body {
 
 .main .section {
   position: relative;
-  margin: 8em 0;
+  padding: 8em 0;
   text-align: center;
 }
 .main .section__heading {
@@ -139,6 +143,12 @@ body {
   margin: 1em;
   font-size: 1.3rem;
   color: hsl(240deg, 40%, 10%);
+}
+.main .our-apps {
+  background-color: rgba(104, 99, 99, 0.084);
+}
+.main .whats-new {
+  background-color: rgba(104, 99, 99, 0);
 }
 .main .discord__link {
   color: hsl(265deg, 99%, 38%);
