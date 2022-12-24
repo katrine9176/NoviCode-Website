@@ -88,6 +88,11 @@ body {
 .header .nav-desktop {
   display: none;
 }
+.header .nav-desktop__top {
+  width: 100%;
+  height: 80px;
+  background-color: hsl(240deg, 40%, 10%);
+}
 .header__img {
   background-image: url("../img/kod-1.webp");
   filter: contrast(25%);
@@ -144,17 +149,18 @@ body {
   font-size: 1.3rem;
   color: hsl(240deg, 40%, 10%);
 }
-.main .our-apps {
+.main .our-apps, .main .about {
   background-color: rgba(104, 99, 99, 0.084);
-}
-.main .whats-new {
-  background-color: rgba(104, 99, 99, 0);
 }
 .main .discord__link {
   color: hsl(265deg, 99%, 38%);
   font-size: 1.5rem;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s;
+}
+.main .discord__link:hover {
+  color: hsl(240deg, 50%, 50%);
 }
 
 .footer {
@@ -196,6 +202,7 @@ body {
     max-width: 700px;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
   }
   .header__logo,
 .header .hamburger {
