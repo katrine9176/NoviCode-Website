@@ -93,11 +93,11 @@ body {
   height: 300px;
 }
 .header__heading {
-  font-family: "Indie Flower", cursive;
+  text-align: center;
   color: hsl(0deg, 0%, 100%);
   font-weight: bold;
-  font-size: 2.5rem;
-  min-width: 200px;
+  font-size: 3rem;
+  min-width: 300px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -106,16 +106,16 @@ body {
 .header__heading::after {
   content: "";
   position: absolute;
-  top: 30px;
-  right: -5px;
-  width: 20px;
+  top: 32px;
+  right: 15px;
+  width: 30px;
   height: 5px;
   background-color: hsl(240deg, 40%, 10%);
+  border-radius: 15px;
 }
 .header__paragraph {
   text-align: center;
   color: rgba(255, 255, 255, 0.7843137255);
-  font-family: "Indie Flower", cursive;
   font-size: 1.4rem;
   position: absolute;
   top: 60%;
@@ -129,12 +129,11 @@ body {
   text-align: center;
 }
 .main .section__heading {
-  font-size: 2.7rem;
-  font-family: "Indie Flower", cursive;
+  font-size: 2.4rem;
   color: hsl(265deg, 99%, 38%);
 }
 .main .section__paragraph {
-  margin: 0.7em;
+  margin: 1em;
   font-size: 1.3rem;
   color: hsl(240deg, 40%, 10%);
 }
@@ -163,11 +162,13 @@ body {
     margin-right: 3em;
   }
   .header__heading {
+    min-width: 350px;
     font-size: 3.5rem;
   }
   .header__heading::after {
     top: 40px;
-    right: -10px;
+    right: -5px;
+    width: 40px;
   }
   .header__paragraph {
     font-size: 1.8rem;
@@ -190,14 +191,15 @@ body {
     height: 500px;
   }
   .header__heading {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
   .header__heading::after {
     width: 70px;
-    top: 45px;
+    top: 52px;
+    right: -15px;
   }
   .header__paragraph {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .header .nav-mobile {
     display: none;
@@ -214,6 +216,12 @@ body {
   .header .nav__link {
     line-height: 80px;
   }
+  .main .section__heading {
+    font-size: 2.8rem;
+  }
+  .main .section__paragraph {
+    font-size: 1.4rem;
+  }
 }
 @media (min-width: 992px) {
   .wrapper {
@@ -224,14 +232,25 @@ body {
     justify-content: space-evenly;
   }
   .header__heading {
-    font-size: 6rem;
+    min-width: 600px;
+    font-size: 5.5rem;
   }
   .header__heading::after {
     width: 100px;
-    top: 70px;
+    top: 60px;
+    right: 7px;
   }
   .header__paragraph {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
+  }
+  .main .section__heading {
+    font-size: 3rem;
+  }
+  .main .section__paragraph {
+    font-size: 1.6rem;
+  }
+  .main .discord__link {
+    font-size: 1.7rem;
   }
 }
 @media (min-width: 1400px) {
