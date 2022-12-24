@@ -2,6 +2,7 @@ const nav = document.querySelector('.nav-mobile')
 const hamburger = document.querySelector('.hamburger')
 const navLinks = document.querySelectorAll('.nav__link')
 const footerYear = document.querySelector('.footer__year')
+const headerTop = document.querySelector('.header__top')
 
 
 const toggleNav = () => {
