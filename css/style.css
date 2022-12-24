@@ -85,7 +85,7 @@ body {
   display: none;
 }
 .header__img {
-  background-image: url("../img/kod-1.jpg");
+  background-image: url("../img/kod-1.webp");
   filter: contrast(30%);
   background-size: cover;
   background-repeat: no-repeat;
