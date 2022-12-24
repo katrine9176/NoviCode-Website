@@ -86,7 +86,7 @@ body {
 }
 .header__img {
   background-image: url("../img/kod-1.webp");
-  filter: contrast(30%);
+  filter: contrast(25%);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -102,6 +102,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-shadow: 5px 5px 15px hsl(240deg, 40%, 10%);
 }
 .header__heading::after {
   content: "";
@@ -114,6 +115,7 @@ body {
   border-radius: 15px;
 }
 .header__paragraph {
+  text-shadow: 5px 5px 15px hsl(240deg, 40%, 10%);
   text-align: center;
   color: rgba(255, 255, 255, 0.7843137255);
   font-size: 1.4rem;
@@ -129,6 +131,7 @@ body {
   text-align: center;
 }
 .main .section__heading {
+  font-weight: bold;
   font-size: 2.4rem;
   color: hsl(265deg, 99%, 38%);
 }
@@ -141,6 +144,7 @@ body {
   color: hsl(265deg, 99%, 38%);
   font-size: 1.5rem;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .footer {
@@ -237,7 +241,7 @@ body {
   }
   .header__heading::after {
     width: 100px;
-    top: 60px;
+    top: 62px;
     right: 7px;
   }
   .header__paragraph {

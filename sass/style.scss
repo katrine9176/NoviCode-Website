@@ -76,7 +76,7 @@ body {
 	}
 	&__img {
 		background-image: url('../img/kod-1.webp');
-		filter: contrast(30%);
+		filter: contrast(25%);
 		background-size: cover;
 		background-repeat: no-repeat;
 		width: 100%;
@@ -93,7 +93,8 @@ body {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-
+		text-shadow: 5px 5px 15px $dark-blue;
+		
 		&::after {
 			content: '';
 			position: absolute;
@@ -105,8 +106,9 @@ body {
 			border-radius: 15px;
 		}
 	}
-
+	
 	&__paragraph {
+		text-shadow: 5px 5px 15px $dark-blue;
 		text-align: center;
 		color: $grey;
 		font-size: 1.4rem;
@@ -124,6 +126,7 @@ body {
 		text-align: center;
 
 		&__heading {
+			font-weight: bold;
 			font-size: 2.4rem;
 			color: $blue;
 		}
@@ -140,6 +143,7 @@ body {
 			color: $blue;
 			font-size: 1.5rem;
 			text-decoration: none;
+			font-weight: bold;
 		}
 	}
 }
@@ -270,7 +274,7 @@ body {
 
 			&::after {
 				width: 100px;
-				top: 60px;
+				top: 62px;
 				right: 7px;
 			}
 		}
