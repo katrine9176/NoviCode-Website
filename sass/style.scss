@@ -13,8 +13,8 @@ body {
 }
 
 .header {
-	overflow: hidden;
 	position: relative;
+	overflow: hidden;
 
 	&__logo {
 		margin-left: 0.5em;
@@ -78,6 +78,7 @@ body {
 
 		&-desktop {
 			display: none;
+
 			&__top {
 				width: 100%;
 				height: 80px;
@@ -95,14 +96,14 @@ body {
 	}
 
 	&__heading {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		min-width: 300px;
 		text-align: center;
 		color: $white;
 		font-weight: bold;
 		font-size: 3rem;
-		min-width: 300px;
-		position: absolute;
-		top: 50%;
-		left: 50%;
 		transform: translate(-50%, -50%);
 		text-shadow: 5px 5px 15px $dark-blue;
 
@@ -119,13 +120,13 @@ body {
 	}
 
 	&__paragraph {
-		text-shadow: 5px 5px 15px $dark-blue;
-		text-align: center;
-		color: $grey;
-		font-size: 1.4rem;
 		position: absolute;
 		top: 60%;
 		left: 50%;
+		text-align: center;
+		text-shadow: 5px 5px 15px $dark-blue;
+		color: $grey;
+		font-size: 1.4rem;
 		transform: translate(-50%);
 	}
 }
@@ -194,6 +195,25 @@ body {
 					color: $dark-purple;
 				}
 			}
+		}
+	}
+
+	.whats-new {
+		p {
+			margin-top: 2em;
+		}
+
+		span {
+			margin: 1em 0.5em;
+			font-size: 1.6rem;
+			font-weight: bold;
+		}
+	}
+
+	.about {
+		p {
+			margin-top: 1em;
+			padding: 1em;
 		}
 	}
 
@@ -401,6 +421,12 @@ body {
 			}
 			&__paragraph {
 				font-size: 1.6rem;
+			}
+		}
+
+		.whats-new {
+			span {
+				font-size: 1.9rem;
 			}
 		}
 

@@ -47,8 +47,8 @@ body {
 }
 
 .header {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 .header__logo {
   margin-left: 0.5em;
@@ -99,7 +99,7 @@ body {
   transition: color 0.3s;
 }
 .header .nav__link:hover {
-  color: #ca00fd;
+  color: hsl(288deg, 100%, 50%);
 }
 .header .nav-desktop {
   display: none;
@@ -118,14 +118,14 @@ body {
   height: 300px;
 }
 .header__heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 300px;
   text-align: center;
   color: hsl(0deg, 0%, 100%);
   font-weight: bold;
   font-size: 3rem;
-  min-width: 300px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
   text-shadow: 5px 5px 15px hsl(240deg, 40%, 10%);
 }
@@ -140,13 +140,13 @@ body {
   border-radius: 15px;
 }
 .header__paragraph {
-  text-shadow: 5px 5px 15px hsl(240deg, 40%, 10%);
-  text-align: center;
-  color: rgba(255, 255, 255, 0.7843137255);
-  font-size: 1.4rem;
   position: absolute;
   top: 60%;
   left: 50%;
+  text-align: center;
+  text-shadow: 5px 5px 15px hsl(240deg, 40%, 10%);
+  color: hsla(0deg, 0%, 100%, 0.784);
+  font-size: 1.4rem;
   transform: translate(-50%);
 }
 
@@ -167,7 +167,7 @@ body {
 }
 .main .our-apps,
 .main .about {
-  background-color: rgba(104, 99, 99, 0.084);
+  background-color: hsla(0deg, 2%, 40%, 0.084);
 }
 .main .our-apps__price-list {
   margin: 2em;
@@ -202,7 +202,19 @@ body {
   margin: 1em;
   font-weight: bold;
   font-size: 1.8rem;
-  color: rgba(80, 1, 191, 0.7333333333);
+  color: hsla(265deg, 99%, 38%, 0.733);
+}
+.main .whats-new p {
+  margin-top: 2em;
+}
+.main .whats-new span {
+  margin: 1em 0.5em;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.main .about p {
+  margin-top: 1em;
+  padding: 1em;
 }
 .main .discord__link {
   color: hsl(265deg, 99%, 38%);
@@ -358,6 +370,9 @@ body {
   }
   .main .section__paragraph {
     font-size: 1.6rem;
+  }
+  .main .whats-new span {
+    font-size: 1.9rem;
   }
   .main .discord__link {
     font-size: 1.7rem;
