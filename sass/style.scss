@@ -12,6 +12,10 @@ body {
 	font-size: 1.8rem;
 }
 
+.overflow {
+	overflow: hidden;
+}
+
 .header {
 	position: relative;
 	overflow: hidden;
@@ -242,7 +246,7 @@ body {
 				color: $blue;
 				border-radius: 50%;
 				border: solid 1px $blue;
-				animation: arrow 1.5s infinite both;
+				animation: arrow 1s infinite alternate both;
 			}
 		}
 	}

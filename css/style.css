@@ -1,17 +1,17 @@
 @-webkit-keyframes arrow {
   from {
-    margin-top: 4em;
+    transform: translateY(-70%);
   }
   to {
-    margin-top: 1em;
+    transform: translateY(30%);
   }
 }
 @keyframes arrow {
   from {
-    margin-top: 4em;
+    transform: translateY(-70%);
   }
   to {
-    margin-top: 1em;
+    transform: translateY(30%);
   }
 }
 html, body, div, span, applet, object, iframe,
@@ -44,6 +44,10 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
+}
+
+.overflow {
+  overflow: hidden;
 }
 
 .header {
@@ -238,8 +242,8 @@ body {
   color: hsl(265deg, 99%, 38%);
   border-radius: 50%;
   border: solid 1px hsl(265deg, 99%, 38%);
-  -webkit-animation: arrow 1.5s infinite both;
-          animation: arrow 1.5s infinite both;
+  -webkit-animation: arrow 1s infinite alternate both;
+          animation: arrow 1s infinite alternate both;
 }
 
 .footer {

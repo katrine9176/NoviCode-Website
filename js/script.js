@@ -6,6 +6,7 @@ const headerTop = document.querySelector('.header__top')
 
 
 const toggleNav = () => {
+	document.body.classList.toggle('overflow')
 	nav.classList.toggle('nav-mobile--active')
 	hamburger.classList.toggle('is-active')
 	navLinks.forEach(element => {
