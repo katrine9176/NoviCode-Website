@@ -13,6 +13,7 @@ const toggleNav = () => {
 		element.addEventListener('click', () => {
 			nav.classList.remove('nav-mobile--active')
 			hamburger.classList.remove('is-active')
+			document.body.classList.remove('overflow')
 		})
 	})
 }
