@@ -1,0 +1,11 @@
+@keyframes arrow {
+    from {
+        // margin-top: 4em;
+        transform: translateY(-70%)
+    }
+    
+    to {
+        transform: translateY(30%)
+        // margin-top: 1em;
+    }
+}
